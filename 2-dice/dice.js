@@ -4,5 +4,5 @@ function diceRoll(diceType) {
         return null
     }
     const diceCount = Number(diceType.replace('d', ''));
-    return Math.floor(Math.random() * (diceCount - 1) + 1)
+    return Math.floor((Math.random() * diceCount) + 1)
 }
